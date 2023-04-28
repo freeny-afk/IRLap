@@ -12,4 +12,5 @@ int main() {
 	one.Set_Angl(30);
 	one.Set_Len(300);
 	Igora.AddTurn(one);
+	std::cout << Igora.TurnSpeed();
 }
