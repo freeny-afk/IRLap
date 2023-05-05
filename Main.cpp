@@ -1,3 +1,4 @@
+#pragma once
 #include "Car.cpp";
 #include "Turn.cpp";
 #include "Racemap.cpp";

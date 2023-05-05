@@ -1,3 +1,4 @@
+#pragma once
 class Turn {
 private:
     double angle;   // angle of turn

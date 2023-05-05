@@ -1,3 +1,4 @@
+#pragma once
 class Car {
 private:
     double acceleration1;  // acceleration 0 - 100 km/h in seconds
