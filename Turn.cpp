@@ -1,19 +1,33 @@
 #pragma once
-class Turn {
-private:
-    double angle;   // angle of turn
-    double length;  // length of turn
-public:
-    Turn() : angle(0), length(0) {
+#include "Turn.h"
+#include <iostream>
+#include <string>
+
+    Turn::Turn() : angle(0), length(0), side(2) {
     }  // standart constructors
-    Turn(double a, double l) : angle(a), length(l) {
+    Turn::Turn(double a, double l) : angle(a), length(l) {
     }  // constructors with parameters
-    void Set_Angl(double a) { 
+
+    void Turn::Set_Angl(double a) {
         angle = a; }  // set turn angle
-    void Set_Len(double l) { 
+    void Turn::Set_Angl() {
+        std::cin >> angle; }  // set turn angle
+
+    void Turn::Set_Len(double l) {
         length = l; }  // set turn length
-    double Get_Angl() const { 
+    void Turn::Set_Len() {
+        std::cin >> length; }  // set turn length
+
+    void Turn::Set_Where(int sd) {
+        side = sd; }
+    void Turn::Set_Where() {
+        std::cin >> side; }  // set turn length
+
+    double Turn::Get_Angl() const {
         return angle; }  // return tern angle
-    double Get_Len() const { 
+    double Turn::Get_Len() const {
         return length; }  // return turn length
-};
+    int Turn::Get_Where() const{
+        return side; } // return side of turn
+
+    
