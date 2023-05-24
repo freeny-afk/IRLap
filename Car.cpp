@@ -1,7 +1,7 @@
 #pragma once
 #include "Car.h"
 #include <iostream>
-    Car::Car() : vcur(0), acceleration1(0), acceleration2(0), vmax(0), mass(0) {
+    Car::Car() : vcur(0), acceleration1(0), acceleration2(0), vmax(200), mass(0) {
     }  // standart constructor
     Car::Car(double a1, double a2, double v, double m) : acceleration1(a1), acceleration2(a2), vmax(v), mass(m) {
     }  // parametred constructor

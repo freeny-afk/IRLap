@@ -30,9 +30,20 @@
                 alpha = 3.14 * deg / 180;
                 r = l / alpha;
                 if (turns[i].Get_Where() == 1 or turns[i].Get_Where() == 3) {
-                    vmaxs.push_back(sqrt(mu * r * 9.8) * 18 / 5);
+                    vmax = sqrt(mu * r * 9.8) * 18 / 5;
+                    if (PoloR2.Get_Vmax() <= vmax) {
+                        vmaxs.push_back(PoloR2.Get_Vmax());
+                    }
+                    else vmaxs.push_back(vmax);
+                    
                 }
-                else vmaxs.push_back(sqrt(mu * 2 * l * a) * 18 / 5);
+                else {
+                    vmax = sqrt(mu * 2 * l * a) * 18 / 5;
+                    if (PoloR2.Get_Vmax() <= vmax) {
+                        vmaxs.push_back(PoloR2.Get_Vmax());
+                    }
+                    else vmaxs.push_back(vmax);
+                }
         }
         for (j = 0; j < s; j++) {
             if (j + 1 == s) {

@@ -6,7 +6,7 @@
 #include <iostream>
 
 int main() {
-	int i, c = 1, kuda;
+	int i, c = 1, kuda, x;
 	char cas;
 	std::vector<Turn> turn;
 	Car PoloR2;
@@ -44,6 +44,7 @@ int main() {
 			Igora.AddTurn(two);
 			Igora.AddTurn(three);
 			Igora.TurnSpeed(PoloR2);
+			std::cin >> x;
 			break;
 		case '2':
 			system("cls");
@@ -86,6 +87,7 @@ int main() {
 				std::cout << "*";
 				std::cout << "\n\n";
 				Igora.TurnSpeed(PoloR2);
+				std::cin >> x;
 			
 	}
 
